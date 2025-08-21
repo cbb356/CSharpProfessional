@@ -1,0 +1,195 @@
+# Ignore compiled files in any subdirectory
+**/bin/*
+**/obj/*
+**/out/*
+**/BuildOutput/*
+
+# Ignore NuGet packages (restore, but don't commit)
+/packages/*
+*.nupkg
+
+# Ignore Visual Studio files and directories
+.vs/
+*.user
+*.suo
+*.sln.docstates
+*.vssscc
+[Bb]uild[Dd]ebug
+[Bb]uild[Rr]elease
+_UpgradeReport_Files/
+UpgradeLog.htm
+#Azure
+/App_Data/PublishProfiles/*
+/ServiceConfiguration.*.cscfg
+/ServiceConfiguration.*.Local.*.cscfg
+/RoleContent/
+/obj/CodeGen
+/obj/StrongName
+/obj/QA
+/obj/x86
+/obj/ARM
+/obj/ARM64
+
+# Ignore Rider files and directories
+.idea/
+*.iml
+/rider-workspace/
+
+# Ignore user-specific files
+*.userprefs
+
+# Ignore temporary files from tools
+_ReSharper*/
+*.rsuser
+*.patch
+*.orig
+*.bak
+*.tmp
+*.log
+*.shfbproj
+/TestResults
+/Publish
+/Content/BundleConfig.config
+/Content/themes/base/Content/BundleConfig.config
+/Content/themes/base/Scripts/BundleConfig.config
+/Project_Readme.html
+/Web.config
+/Web.Debug.config
+/Web.Release.config
+/Areas/*/Views/Web.config
+/Views/Web.config
+/Properties/AssemblyInfo.cs
+/Properties/licenses.licx
+/ServiceReferences/
+/Global.asax
+/Global.asax.resx
+/NLog.config
+/log4net.config
+/App_LocalResources/
+/App_GlobalResources/
+/obj/Roslyn/
+/Pages/*.*.designer.cs
+/Pages/*.*.layout.cs
+/My Project/
+/Modules/*.*.designer.vb
+/My Project/Settings.settings
+/My Project/licenses.licx
+/My Project/Application.Designer.vb
+/My Project/Application.myapp
+/My Project/Resources.Designer.vb
+/My Project/Resources.resx
+/My Project/AssemblyInfo.vb
+/My Project/Web.config
+/My Project/Web.Debug.config
+/My Project/Web.Release.config
+/bin/StrongName
+/obj/Debug
+/obj/Release
+/obj/GenerateSerializationAssemblies
+/obj/Ref
+/obj/DesignTime
+/obj/x86
+/obj/x64
+/obj/ARM
+/obj/ARM64
+/obj/ilc
+/obj/Native
+/obj/win-x64
+/obj/linux-x64
+/obj/publish
+/App_Licenses.dll
+/PrecompiledApp.config
+/bin/PrecompiledWeb
+/obj/Release
+/obj/Debug
+/obj/x86
+/obj/x64
+/obj/ARM
+/obj/ARM64
+/obj/ilc
+/obj/Native
+/obj/publish
+/obj/CodeGen
+/obj/QATest
+/obj/Roslyn
+/obj/Resources
+/obj/StrongName
+/obj/Upgrade
+/obj/View
+/obj/Documentation
+/obj/DesignTime
+/obj/Serialization
+/obj/Web
+/obj/Xaml
+/obj/TempPE
+/obj/vital
+/obj/project.razor.json
+/artifacts
+/packages
+/TestResults
+/codecoverage
+/CodeCoverage
+/publish
+/PublishedWebsites
+/ReSharperPatch
+/ShadowCopies
+/wpp.bin
+/wpp.dpx
+/wpp.mpf
+/wpp.pretransform
+/wpp.targets
+/wpp.targets.imports
+/wpp.tasks
+/wpp.tasks.imports
+/wpp.xml
+/obj/Release
+/obj/Debug
+/obj/x86
+/obj/x64
+/obj/ARM
+/obj/ARM64
+/obj/ilc
+/obj/Native
+/obj/publish
+/obj/CodeGen
+/obj/QATest
+/obj/Roslyn
+/obj/Resources
+/obj/StrongName
+/obj/Upgrade
+/obj/View
+/obj/Documentation
+/obj/DesignTime
+/obj/Serialization
+/obj/Web
+/obj/Xaml
+/obj/TempPE
+/obj/vital
+/obj/project.razor.json
+/artifacts
+/packages
+/TestResults
+/codecoverage
+/CodeCoverage
+/publish
+/PublishedWebsites
+/ReSharperPatch
+/ShadowCopies
+/wpp.bin
+/wpp.dpx
+/wpp.mpf
+/wpp.pretransform
+/wpp.targets
+/wpp.targets.imports
+/wpp.tasks
+/wpp.tasks.imports
+/wpp.xml
+
+# Ignore Code Analysis files
+/StyleCop.Cache
+/obj/StaticAnalysis
+/obj/StaticAnalysisInputs.cache
+/obj/StaticAnalysisResults.cache
+
+# Ignore misc
+
