@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_FamilyTree", "03_FamilyT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Dictionary", "04_Dictionary\04_Dictionary.csproj", "{55902369-503F-4C02-95FB-3EF4B2A0B474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_EvenPower", "06_EvenPower\06_EvenPower.csproj", "{4FAAF732-2DBA-4D6A-B7D5-6A0EBA370335}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_OddSquareNumbers", "06_OddSquareNumbers\06_OddSquareNumbers.csproj", "{4FAAF732-2DBA-4D6A-B7D5-6A0EBA370335}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

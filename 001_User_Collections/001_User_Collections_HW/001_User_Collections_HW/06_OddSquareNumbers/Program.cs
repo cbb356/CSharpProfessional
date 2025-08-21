@@ -4,11 +4,11 @@
  * Для формування колекції використовуйте оператор yield.
  */
 
-namespace EvenPower
+namespace OddSquareNumbers
 {
     internal class Program
     {
-        public static IEnumerable<int> EvenPowerNumbers(IEnumerable<int> source, Func<int, bool> condition)
+        public static IEnumerable<int> SquareNumbers(IEnumerable<int> source, Func<int, bool> condition)
         {
             foreach (var item in source)
             {
@@ -23,12 +23,11 @@ namespace EvenPower
         {
             List<int> list = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
 
-            var result = EvenPowerNumbers(list, x => x % 2 == 0);
+            var result = SquareNumbers(list, x => x % 2 != 0);
             foreach (var item in result)
             {
                 Console.WriteLine(item);
             }
-
         }
     }
 }
