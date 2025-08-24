@@ -28,6 +28,10 @@ namespace OddSquareNumbers
             {
                 Console.WriteLine(item);
             }
+
+            // Delay.
+            Console.WriteLine("\nPress any key to continue...");
+            Console.ReadKey();
         }
     }
 }
