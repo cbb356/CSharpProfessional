@@ -4,6 +4,7 @@
  */
 
 using System.Collections;
+using System.Collections.Generic;
 
 namespace SortedListExample
 {
@@ -11,22 +12,43 @@ namespace SortedListExample
     {
         static void Main(string[] args)
         {
-            SortedList sortedList = new SortedList();
+            // Creating SortedList collection
+            SortedList sortedList1 = new SortedList();
 
-            sortedList.Add("One", 1);
-            sortedList.Add("Two", 2);
-            sortedList.Add("Three", 3);
+            sortedList1.Add("One", 1);
+            sortedList1.Add("Two", 2);
+            sortedList1.Add("Three", 3);
 
             Console.WriteLine("The list of elements of the SortedList:");
-            foreach (DictionaryEntry entry in sortedList)
+            foreach (DictionaryEntry entry in sortedList1)
             {
-                Console.WriteLine($"{entry.Key}: {entry.Value}");
+                Console.WriteLine($"Key: { entry.Key}, Value: { entry.Value}");
             }
 
             Console.WriteLine("\nThe reversed list of elements of the SortedList");
-            for (int i = sortedList.Count - 1; i >= 0; i--)
+            for (int i = sortedList1.Count - 1; i >= 0; i--)
             {
-                Console.WriteLine($"{sortedList.GetKey(i)}: {sortedList.GetByIndex(i)}");
+                Console.WriteLine($"Key: {sortedList1.GetKey(i)}, Value: {sortedList1.GetByIndex(i)}");
+            }
+
+            // Creating SortedList<string, int> collection
+            SortedList<string, int> sortedList2 = new SortedList<string, int>();
+
+            sortedList2.Add("One", 1);
+            sortedList2.Add("Two", 2);
+            sortedList2.Add("Three", 3);
+
+            Console.WriteLine("\nThe list of elements of the SortedList<string, int>:");
+            foreach (var item in sortedList2)
+            {
+                Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
+            }
+
+            Console.WriteLine("\nThe reversed list of elements of the SortedList<string, int>");
+
+            foreach (var item in sortedList2.Reverse())
+            {
+                Console.WriteLine($"Key: {item.Key}, Value: {item.Value}");
             }
 
             // Delay.
