@@ -28,7 +28,7 @@ namespace Directories
             Console.WriteLine($"List of folders inside {directory.FullName}");
             foreach (string subdirectory in Directory.GetDirectories(basePath))
             {
-                Console.WriteLine($"{subdirectory} ");
+                Console.WriteLine(subdirectory);
             }
 
             // Delay before deleting
@@ -51,6 +51,9 @@ namespace Directories
             {
                 Console.WriteLine($"{subdirectory} ");
             }
+
+            // Directory deleting
+            directory.Delete(true);
 
             // Delay
             Console.WriteLine("\nPress any key to continue...");

@@ -25,29 +25,29 @@ namespace Accounts
                 Console.WriteLine($"{item.Key}\t\t{item.Value}");
             }
 
-            // Creating collection with Hashtable approach
-            var accounts2 = new Hashtable();
+            // Creating collection with SortedList<int, decimal> approach
+            var accounts2 = new SortedList<int, decimal>();
 
-            accounts2[1001] = 75300.50m;
-            accounts2[1002] = 120450.25m;
             accounts2[1003] = 9810.00m;
+            accounts2[1002] = 120450.25m;
+            accounts2[1001] = 75300.50m;
 
-            Console.WriteLine("\nHashtable example");
+            Console.WriteLine("\nSortedList<int, decimal> example");
             Console.WriteLine($"Account:\tBalance:");
-            foreach (DictionaryEntry item in accounts2)
+            foreach (var item in accounts2)
             {
                 Console.WriteLine($"{item.Key}\t\t{item.Value}");
             }
 
-            // Creating collection with SortedList<int, decimal> approach
-            var accounts3 = new SortedList<int, decimal>()
+            // Creating collection with SortedDictionary<int, decimal> approach
+            var accounts3 = new SortedDictionary<int, decimal>()
             {
                 { 1002, 120450.25m },
                 { 1003, 9810.00m },
                 { 1001, 75300.50m }
             };
 
-            Console.WriteLine("\nSortedList<int, decimal> example");
+            Console.WriteLine("\nSortedDictionary<int, decimal> example");
             Console.WriteLine($"Account:\tBalance:");
             foreach (var item in accounts3)
             {
