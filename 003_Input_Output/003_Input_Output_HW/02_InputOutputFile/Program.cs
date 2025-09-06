@@ -17,11 +17,17 @@ namespace InputOutputFile
             var writer = new StreamWriter(file);
             writer.WriteLine("Hello, World!");
             writer.WriteLine("Another text added");
+            Console.WriteLine($"Text was saved to the file: {filePath}");
 
             // File closing
             writer.Close();
 
+            // Delay before viewing
+            Console.WriteLine("\nPress any key to view the file");
+            Console.ReadKey();
+
             // Reading text from file
+            Console.WriteLine($"\nThe content of the file {filePath}:");
             file = File.Open(filePath, FileMode.Open);
             var reader = new StreamReader(file);
             Console.Write(reader.ReadToEnd());
