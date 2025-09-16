@@ -30,8 +30,7 @@ namespace Decoder
 
             string[] prepositions =
             {
-                "без", "біля", "в", "від", "для", "до", "за", "з", "із", "з-за", "з-під", 
-                "з-поміж", "з-понад", "з-перед", "з-посеред", "з-проміж", "з-понад", "зі", 
+                "без", "біля", "в", "від", "для", "до", "за", "з", "із", "зі", 
                 "коло", "крім", "кругом", "між", "на", "над", "навколо", "назустріч", 
                 "о", "обабіч", "об", "по", "побіля", "повз", "поміж", "що",
                 "поперед", "посеред", "після", "при", "проти", "про", "через", "щодо", 
@@ -43,9 +42,8 @@ namespace Decoder
             // Creating the file with decoded text
             string decodedFile = "decoded_text.txt";
             File.WriteAllText(decodedFile, decodedText);
-            string decodedTextFromFile = File.ReadAllText(decodedFile);
             Console.WriteLine($"Content of the {decodedFile} file:\n");
-            Console.WriteLine($"{decodedTextFromFile}\n");
+            Console.WriteLine($"{decodedText}\n");
 
             // Delay
             Console.WriteLine("\nPress any key to continue...");
