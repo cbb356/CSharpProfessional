@@ -6,12 +6,35 @@
  * зі значенням номера телефону.
  */
 
+using System.Xml;
+
 namespace TelephoneBook
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            using (var xmlWriter = new XmlTextWriter("TelephoneBook.xml", null))
+            {
+                xmlWriter.Formatting = Formatting.Indented;
+
+                xmlWriter.WriteStartDocument();                     //  Start document
+                xmlWriter.WriteStartElement("MyContacts");          //  <MyContacts>     
+                xmlWriter.WriteStartElement("Contact");             //      <Contact>
+                xmlWriter.WriteAttributeString("TelephoneNumber", "1234567891");    // attribute TelephoneNumber for Contact
+                xmlWriter.WriteString("John Smith");                //          John Smith
+                xmlWriter.WriteEndElement();                        //      </Contact>
+                xmlWriter.WriteStartElement("Contact");             //      <Contact>
+                xmlWriter.WriteAttributeString("TelephoneNumber", "1234567892");    // attribute TelephoneNumber for Contact
+                xmlWriter.WriteString("Mary Shelly");               //          Mary Shelly
+                xmlWriter.WriteEndElement();                        //      </Contact>   
+                xmlWriter.WriteStartElement("Contact");             //      <Contact>
+                xmlWriter.WriteAttributeString("TelephoneNumber", "1234567893");    // attribute TelephoneNumber for Contact
+                xmlWriter.WriteString("Michael Kelly");             //          Michael Kelly
+                xmlWriter.WriteEndElement();                        //      </Contact>   
+                xmlWriter.WriteEndElement();                        //  </MyContacts>
+            }
+            
             // Delay
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
