@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<MyContacts>
+  <Contact TelephoneNumber="1234567891">John Smith</Contact>
+  <Contact TelephoneNumber="1234567892">Mary Shelly</Contact>
+  <Contact TelephoneNumber="1234567893">Michael Kelly</Contact>
+</MyContacts>
