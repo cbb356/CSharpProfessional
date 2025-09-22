@@ -28,8 +28,8 @@ namespace AdminApp
                 fgColor = parsedFgColor.ToString();
             }
 
-                // Setting background color
-                Console.Write("Enter background color (White, Yellow, Red, Green, Cyan, Black, etc): ");
+            // Setting background color
+            Console.Write("Enter background color (White, Yellow, Red, Green, Cyan, Black, etc): ");
             string ?bgColor = Console.ReadLine();
 
             if (!Enum.TryParse(bgColor, ignoreCase: true, out ConsoleColor parsedBgColor))
