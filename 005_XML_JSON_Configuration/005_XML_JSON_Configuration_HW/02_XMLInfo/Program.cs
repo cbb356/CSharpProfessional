@@ -2,7 +2,6 @@
  * Створіть програму, яка виводить на екран всю інформацію про вказаний .xml файл.
  */
 
-using System.Reflection.PortableExecutable;
 using System.Xml;
 
 namespace XMLInfo
