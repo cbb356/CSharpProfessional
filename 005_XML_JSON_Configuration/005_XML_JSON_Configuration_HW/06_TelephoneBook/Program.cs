@@ -14,7 +14,8 @@ namespace TelephoneBook
     {
         static void Main(string[] args)
         {
-            using (var xmlWriter = new XmlTextWriter("TelephoneBook.xml", null))
+            string fileName = "TelephoneBook.xml";
+            using (var xmlWriter = new XmlTextWriter(fileName, null))
             {
                 xmlWriter.Formatting = Formatting.Indented;
 
@@ -34,7 +35,9 @@ namespace TelephoneBook
                 xmlWriter.WriteEndElement();                        //      </Contact>   
                 xmlWriter.WriteEndElement();                        //  </MyContacts>
             }
-            
+
+            Console.WriteLine($"File \"{fileName}\" created");
+
             // Delay
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();

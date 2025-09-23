@@ -24,34 +24,34 @@ namespace UserApp
                     .AddJsonFile(filePath, optional: false, reloadOnChange: true)
                     .Build();
 
-                Console.WriteLine("The config file was read");
+                Console.WriteLine("Config file was read");
 
                 if (!Enum.TryParse(config["ForegroundColor"], ignoreCase: true, out fgColor))
                 {
-                    Console.WriteLine("The foreground color in config is incorrect. Default value (Gray) was used instead");
+                    Console.WriteLine("Foreground color in config is incorrect. Default value (Gray) was used instead");
                     fgColor = ConsoleColor.Gray;
                 }
 
                 if (!Enum.TryParse(config["BackgroundColor"], ignoreCase: true, out bgColor))
                 {
-                    Console.WriteLine("The background color in config is incorrect. Default value (Black) was used instead");
+                    Console.WriteLine("Background color in config is incorrect. Default value (Black) was used instead");
                     bgColor = ConsoleColor.Black;
                 }
             }
             else
             {
-                Console.WriteLine("The config file is not found. Default values (Gray and Black) were used instead");
+                Console.WriteLine("Config file is not found. Default values (Gray and Black) were used instead");
                 fgColor = ConsoleColor.Gray;
                 bgColor = ConsoleColor.Black;
             }
 
-            Console.WriteLine($"The foreground color set to {fgColor.ToString()}");
-            Console.WriteLine($"The background color set to {bgColor.ToString()}");
+            Console.WriteLine($"Foreground color set to {fgColor.ToString()}");
+            Console.WriteLine($"Background color set to {bgColor.ToString()}");
             Console.ForegroundColor = fgColor;
             Console.BackgroundColor = bgColor;
 
             // Testing output
-            Console.WriteLine("\nTest text");
+            Console.WriteLine("\nTest text in colors from config");
 
             Console.ResetColor();
 
