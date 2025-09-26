@@ -11,27 +11,12 @@ namespace Obsolete
         static void Main(string[] args)
         {
             var obsoleteMethods = new ObsoleteMethods();
-            obsoleteMethods.OldMethod();
-            //obsoleteMethods.VeryOldMethod();    // Compilation error
+            obsoleteMethods.OldMethod();            // Warning: The method is deprecated
+            //obsoleteMethods.VeryOldMethod();      // Error: The method is no longer supported
 
             // Delay
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
-        }
-    }
-
-    internal class ObsoleteMethods
-    {
-        [Obsolete("This method is deprecated but you can use it")]
-        public void OldMethod()
-        {
-            Console.WriteLine("OldMethod calling");
-        }
-
-        [Obsolete("This method is deprecated and you can't use it", true)]
-        public void VeryOldMethod()
-        {
-            Console.WriteLine("VeryOldMethod calling");
         }
     }
 }
