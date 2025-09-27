@@ -20,7 +20,7 @@ namespace Serialization
                 xmlSerializer.Serialize(stream, personElements);
             }
 
-            Console.WriteLine($"{personElements} serialization completed");
+            Console.WriteLine($"'{typeof(PersonElements).Name}' serialization completed");
 
             // Serialize Person with Attributes
             PersonAttributes personAttributes = new PersonAttributes() { Name = "Mary Shelly", Age = 21};
@@ -30,7 +30,7 @@ namespace Serialization
                 xmlSerializer.Serialize(stream, personAttributes);
             }
 
-            Console.WriteLine($"{personAttributes} serialization completed");
+            Console.WriteLine($"'{typeof(PersonAttributes).Name}' serialization completed");
 
             // Delay
             Console.WriteLine("\nPress any key to continue...");
