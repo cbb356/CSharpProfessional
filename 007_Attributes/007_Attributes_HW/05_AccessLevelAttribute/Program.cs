@@ -44,7 +44,7 @@ namespace AccessLevelAttribute
 
             Console.WriteLine($"{type.Name} has access level {attribute.AccessLevel}");
 
-            if (attribute.AccessLevel >= 2)
+            if (attribute.AccessLevel >= requiredLevel)
             {
                 Console.WriteLine("Access granted");
             }
