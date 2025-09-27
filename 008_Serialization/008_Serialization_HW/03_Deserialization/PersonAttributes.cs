@@ -11,7 +11,7 @@ namespace Deserialization
     public class PersonAttributes
     {
         [XmlAttribute]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         [XmlAttribute]
         public int Age { get; set; }
 
