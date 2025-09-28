@@ -14,5 +14,9 @@ namespace Serialization
         [XmlElement("PersonName")]
         public string? Name { get; set; }
         public int Age { get; set; }
+        public override string ToString()
+        {
+            return $"CLass '{typeof(PersonElements).Name}' with properties Name: '{Name}' and Age: {Age}";
+        }
     }
 }

@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\02_Serialization\02_Serialization.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Update="PersonAttributes.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

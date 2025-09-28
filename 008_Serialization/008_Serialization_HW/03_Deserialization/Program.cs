@@ -3,6 +3,7 @@
  * Відобразіть стан об’єкту на екрані. 
  */
 using System.Xml.Serialization;
+using Serialization;
 
 namespace Deserialization
 {

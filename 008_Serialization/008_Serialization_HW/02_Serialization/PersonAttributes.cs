@@ -14,5 +14,9 @@ namespace Serialization
         public string? Name { get; set; }
         [XmlAttribute]
         public int Age { get; set; }
+        public override string ToString()
+        {
+            return $"CLass '{typeof(PersonAttributes).Name}' with properties Name: '{Name}' and Age: {Age}";
+        }
     }
 }
