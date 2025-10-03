@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_MemoryMonitor", "02_MemoryMonitor\02_MemoryMonitor.csproj", "{2E52BF0E-6472-4D15-9D05-39325C278AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_Cleaning", "04_Cleaning\04_Cleaning.csproj", "{4C60E081-1433-423C-A4A5-606B01D88014}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E52BF0E-6472-4D15-9D05-39325C278AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E52BF0E-6472-4D15-9D05-39325C278AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E52BF0E-6472-4D15-9D05-39325C278AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E52BF0E-6472-4D15-9D05-39325C278AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C60E081-1433-423C-A4A5-606B01D88014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C60E081-1433-423C-A4A5-606B01D88014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C60E081-1433-423C-A4A5-606B01D88014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C60E081-1433-423C-A4A5-606B01D88014}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0D78C83-0241-4801-861E-1B2614E30018}
+	EndGlobalSection
+EndGlobal

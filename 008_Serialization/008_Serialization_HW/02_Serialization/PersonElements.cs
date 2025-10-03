@@ -8,7 +8,7 @@ using System.Xml.Serialization;
 
 namespace Serialization
 {
-    [XmlType("Person")]
+    [XmlRoot("Person")]
     public class PersonElements
     {
         [XmlElement("PersonName")]

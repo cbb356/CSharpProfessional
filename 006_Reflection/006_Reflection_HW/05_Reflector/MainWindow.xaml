@@ -5,98 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Reflector"
         mc:Ignorable="d"
-        Title="Assembly Reflector" Height="700" Width="1200"
-        WindowStartupLocation="CenterScreen">
-
-    <Window.Resources>
-        <Style TargetType="TreeViewItem">
-            <Setter Property="IsExpanded" Value="False"/>
-            <Setter Property="FontFamily" Value="Consolas, Courier New"/>
-        </Style>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Consolas, Courier New"/>
-        </Style>
-    </Window.Resources>
-
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-
-        <!-- Menu and Toolbar -->
-        <DockPanel Grid.Row="0" Background="#f8f9fa">
-            <Menu DockPanel.Dock="Top">
-                <MenuItem Header="_File">
-                    <MenuItem Header="_Load Assembly..." Click="LoadAssembly_Click"/>
-                    <Separator/>
-                    <MenuItem Header="E_xit" Click="Exit_Click"/>
-                </MenuItem>
-                <MenuItem Header="_Help">
-                    <MenuItem Header="_About" Click="About_Click"/>
-                </MenuItem>
-            </Menu>
-            <ToolBar DockPanel.Dock="Top">
-                <Button Name="btnLoadAssembly" Click="LoadAssembly_Click" ToolTip="Load Assembly">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="📁" FontSize="16" Margin="0,0,5,0"/>
-                        <TextBlock Text="Load Assembly"/>
-                    </StackPanel>
-                </Button>
-                <Separator/>
-                <Button Name="btnClear" Click="Clear_Click" ToolTip="Clear All">
-                    <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="🗑️" FontSize="16" Margin="0,0,5,0"/>
-                        <TextBlock Text="Clear"/>
-                    </StackPanel>
-                </Button>
-            </ToolBar>
-        </DockPanel>
-
-        <!-- Main Content -->
-        <Grid Grid.Row="1">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="400" MinWidth="300"/>
-                <ColumnDefinition Width="5"/>
-                <ColumnDefinition Width="*" MinWidth="300"/>
-            </Grid.ColumnDefinitions>
-
-            <!-- Left Panel - Assembly Tree -->
-            <GroupBox Grid.Column="0" Header="Assembly Structure" Margin="5">
-                <TreeView Name="treeAssembly" SelectedItemChanged="TreeAssembly_SelectedItemChanged">
-                    <TreeView.ContextMenu>
-                        <ContextMenu>
-                            <MenuItem Header="Expand All" Click="ExpandAll_Click"/>
-                            <MenuItem Header="Collapse All" Click="CollapseAll_Click"/>
-                        </ContextMenu>
-                    </TreeView.ContextMenu>
-                </TreeView>
-            </GroupBox>
-
-            <GridSplitter Grid.Column="1" Width="5" HorizontalAlignment="Stretch" Background="LightGray"/>
-
-            <!-- Right Panel - Details -->
-            <GroupBox Grid.Column="2" Header="Details" Margin="5">
-                <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
-                    <TextBox Name="txtDetails" 
-                             IsReadOnly="True" 
-                             Background="White"
-                             FontFamily="Consolas, Courier New"
-                             FontSize="12"
-                             TextWrapping="Wrap"
-                             AcceptsReturn="True"
-                             VerticalScrollBarVisibility="Auto"
-                             HorizontalScrollBarVisibility="Auto"/>
-                </ScrollViewer>
-            </GroupBox>
-        </Grid>
-
-        <!-- Status Bar -->
-        <StatusBar Grid.Row="2">
-            <StatusBarItem>
-                <TextBlock Name="statusText" Text="Ready. Load an assembly to begin reflection."/>
-            </StatusBarItem>
-        </StatusBar>
-    </Grid>
+        Title="Reflector" Height="600" Width="800">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="File">
+                <MenuItem Header="Open" Click="Open_Click"/>
+                <MenuItem Header="Close" Click="Close_Click"/>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="DetailsTextBox" Margin="10" VerticalScrollBarVisibility="Auto"
+                 HorizontalScrollBarVisibility="Auto" AcceptsReturn="True" TextWrapping="Wrap"
+                 IsReadOnly="True"/>
+    </DockPanel>
 </Window>

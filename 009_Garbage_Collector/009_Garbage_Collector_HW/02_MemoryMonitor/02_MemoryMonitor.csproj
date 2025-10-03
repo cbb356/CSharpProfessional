@@ -3,13 +3,9 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
-    <RootNamespace>UserSerialize</RootNamespace>
+    <RootNamespace>MemoryMonitor</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="SoapFormatter" Version="1.1.9" />
-  </ItemGroup>
 
 </Project>
