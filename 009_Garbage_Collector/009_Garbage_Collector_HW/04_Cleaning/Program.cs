@@ -10,10 +10,10 @@ namespace Cleaning
     {
         internal static void CreateInstance()
         {
-            LargeObject largeObject = new LargeObject(50);
-            largeObject.DoWork();
-            largeObject.Dispose();
-            //Console.WriteLine($"Managed Heap volume = {GC.GetTotalMemory(false) / (1024 * 1024)} MB");
+            using (LargeObject largeObject = new LargeObject(50))
+            {
+                largeObject.DoWork();
+            }
         }
 
         static void Main(string[] args)
