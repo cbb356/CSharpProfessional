@@ -10,6 +10,11 @@ namespace TemplateMethod
     {
         static void Main(string[] args)
         {
+            DocumentPrinter[] printer = { new XMLDocumentPrinter(), new TxtDocumentPrinter() };
+            foreach (var item in printer)
+            {
+                item.PrintDocument();
+            }
 
             // Delay
             Console.WriteLine("\nPress any key to continue...");
