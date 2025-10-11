@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_MonitorLock", "04_MonitorLock\04_MonitorLock.csproj", "{DEF5BA76-FEF4-4DE4-ABAF-AB4D1B4552F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_ReadWriteToFile", "02_ReadWriteToFile\02_ReadWriteToFile.csproj", "{334CB322-FD1D-4A92-93CA-76CD8B3D24FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEF5BA76-FEF4-4DE4-ABAF-AB4D1B4552F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEF5BA76-FEF4-4DE4-ABAF-AB4D1B4552F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEF5BA76-FEF4-4DE4-ABAF-AB4D1B4552F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEF5BA76-FEF4-4DE4-ABAF-AB4D1B4552F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{334CB322-FD1D-4A92-93CA-76CD8B3D24FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{334CB322-FD1D-4A92-93CA-76CD8B3D24FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{334CB322-FD1D-4A92-93CA-76CD8B3D24FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{334CB322-FD1D-4A92-93CA-76CD8B3D24FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DEE3678F-3739-4987-A9DF-72E2AB0E372D}
+	EndGlobalSection
+EndGlobal
