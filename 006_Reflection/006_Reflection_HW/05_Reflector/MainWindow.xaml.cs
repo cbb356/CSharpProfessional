@@ -24,7 +24,7 @@ namespace Reflector
                     var assembly = Assembly.LoadFile(dialog.FileName);
                     DetailsTextBox.Clear();
                     DetailsTextBox.AppendText($"The {dialog.FileName} loaded successfully\n\n");
-                    DetailsTextBox.AppendText($"Assembly info: {assembly.FullName}\n\n");
+                    DetailsTextBox.AppendText($"Assembly information: {assembly.FullName}\n\n");
                     DetailsTextBox.AppendText($"The list of types in the assembly:\n\n");
                     foreach (var type in assembly.GetTypes())
                     {
