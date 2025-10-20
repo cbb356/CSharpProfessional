@@ -19,12 +19,24 @@ namespace AutoResetEventHandle
             Thread thread = new Thread(Function) { IsBackground = true };
             thread.Start();
 
-            Console.WriteLine("\nPress any key to send signal");
             while (true)
             {
-                Console.ReadKey();
-                handle.Set();
-                Console.WriteLine("The signal has been sent. Press any key to send another one");
+                Console.WriteLine("Press key to choose action: S - signal, Q - exit");
+                string operation = Console.ReadKey(true).KeyChar.ToString().ToUpper();
+
+                switch (operation)
+                {
+                    case "S":
+                        handle.Set();
+                        Console.WriteLine("The signal has been sent.");
+                        break;
+                    case "Q":
+                        Console.WriteLine("Exiting program...");
+                        return;
+                    default:
+                        Console.Write("Wrong input. ");
+                        break;
+                }
             }
         }
 
