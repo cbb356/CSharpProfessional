@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36408.4 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_AsyncAwaitLock", "04_AsyncAwaitLock\04_AsyncAwaitLock.csproj", "{94232E7C-0885-49FC-A4C5-7DC6260E8CC2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_DataBaseConnect", "02_DataBaseConnect\02_DataBaseConnect.csproj", "{6324803C-4AAB-45F0-94D6-16776E9A5C31}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{94232E7C-0885-49FC-A4C5-7DC6260E8CC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94232E7C-0885-49FC-A4C5-7DC6260E8CC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94232E7C-0885-49FC-A4C5-7DC6260E8CC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6324803C-4AAB-45F0-94D6-16776E9A5C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6324803C-4AAB-45F0-94D6-16776E9A5C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6324803C-4AAB-45F0-94D6-16776E9A5C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6324803C-4AAB-45F0-94D6-16776E9A5C31}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
